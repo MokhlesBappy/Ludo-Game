@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Game</title>
+</head>
+<body>
+    <h1 style="justify-content: center; align-items: center; display: flex;">Play Enjoy and Remember Your Childwood</h1>
+    <div style="justify-content: center; align-items: center; display: flex; gap: 30px; margin-top: 0px;">     
+    <img style="border-radius: 50px;" id="im" src="1.png" alt="ludo">
+    
+    <button style="padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 10px; background-color: goldenrod; border: none; border-radius: 10px; color: white; font-size: large;" id="bu" onclick="rd ()">Click</button>
+    </div>
+
+
+    <script>
+        function rd (){
+            let rN = Math.floor (Math.random() * 6 ) +1;
+            let imS = rN + '.png';
+
+            document.getElementById('im').src = imS;
+        }
+        let uv=6;
+        let lv=1
+        let rv=Math.ceil(Math.random() * uv);
+        console.log(rv);
+    </script>
+    
+</body>
+</html>
